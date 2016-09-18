@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCEA3099-B348-409E-A64B-80F3C891ADFF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QcVsApiSpreads</RootNamespace>
+    <AssemblyName>QcVsApiSpreads</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MiscExtenders.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SpreadInfo.cs" />
+    <Compile Include="Symbol.cs" />
+    <Compile Include="Tick.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App.licenseheader" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_01_15_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_02_03_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_03_18_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_04_30_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_05_06_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_06_29_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_07_07_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_08_24_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_09_01_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_10_22_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_11_12_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\USDJPY\FXCM_FCAPI_USDJPY_2015_12_03_00_24H_EST.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150114_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150115_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150202_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150203_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150317_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150318_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150429_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150430_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150505_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150506_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150628_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150629_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150706_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150707_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150823_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150824_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150831_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20150901_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20151021_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20151022_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20151111_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20151112_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20151202_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\EURUSD\20151203_eurusd_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150114_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150115_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150201_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150202_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150317_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150318_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150428_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150429_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150526_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150527_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150609_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150610_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150707_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150708_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150823_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150824_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150831_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20150901_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20151001_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20151002_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20151103_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20151104_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20151215_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromQuantConnect\USDJPY\20151216_usdjpy_tick_quote.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_01_15_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_02_03_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_03_18_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_04_30_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_05_06_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_06_29_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_07_07_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_08_24_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_09_01_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_10_22_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_11_12_00_24H_EST.csv" />
+    <None Include="TickFiles\FromGetFxcmHistory\EURUSD\FXCM_FCAPI_EURUSD_2015_12_03_00_24H_EST.csv" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
